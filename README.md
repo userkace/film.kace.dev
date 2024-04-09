@@ -10,7 +10,7 @@ film.kace.dev is a mirror of [movie-web](httpsgithub.commovie-webmovie-web)
 - Bookmark shows or movies, keep track of what you want to watch.
 - Minimalistic interface that only shows whats required - no algorithm to consume you.
 
-## links And resources
+## resources
 | Service        | Link                                               | Source Code                                              |
 |----------------|----------------------------------------------------|----------------------------------------------------------|
 | Movie-Web Docs | [movie-web-docs](https://movie-web.github.io/docs) | [Source Code](https://github.com/movie-web/docs)         |
