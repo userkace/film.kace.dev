@@ -7,7 +7,7 @@ film.kace.dev is a mirror of [movie-web](httpsgithub.commovie-webmovie-web)
 | Movie-Web Docs | [movie-web-docs](https://movie-web.github.io/docs) | [Source Code](https://github.com/movie-web/docs)         |
 | Extension      | [movie-web plugin](https://shorturl.at/iqzES)      | [Source Code](https://github.com/movie-web/extension)    |
 | Proxy          | [film-proxy](film-proxy.kace.workers.dev)    | [Source Code](https://github.com/userkace/film-proxy) |
-| Backend        | *to follow*    ||
+| Backend        | [community-backend](mw-backend.lonelil.ru)   | [Source Code](https://movie-web.github.io/docs/instances#community-backend) |
 | Frontend       | [film.kace.dev](https://film.kace.dev)                 | [Source Code](https://github.com/userkace/film.kace.dev)  |
 
 ## Referrers
