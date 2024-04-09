@@ -13,11 +13,10 @@ film.kace.dev is a mirror of [movie-web](httpsgithub.commovie-webmovie-web)
 I provide these if you are not able to host yourself, though I do encourage hosting the frontend.
 
 ## Referrers
-- [Priacy Subreddit Megathread](https://www.reddit.com/r/Piracy/s/iymSloEpXn)
+- [Piracy Subreddit Megathread](https://www.reddit.com/r/Piracy/s/iymSloEpXn)
 - [Toon's Instances](https://erynith.github.io/movie-web-instances)
 - [Movie-Web Docs](https://movie-web.github.io/docs/instances)
 - [Movie-Web Discord](https://movie-web.github.io/links/discord)
-- Search Engines: DuckDuckGo, Bing, Google
 
 ## Contact Me
 **Email:** *[user@kace.dev](mailto:user@kace.dev)*
