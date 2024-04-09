@@ -7,7 +7,7 @@ window.__CONFIG__ = {
   VITE_TMDB_READ_API_KEY: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzMxNTBlMzkzMWI5ZTJmNTc2ZWQ3NjNhZjg5YjFiNiIsInN1YiI6IjY2MTU0ZDU4MDQ4NjM4MDE3YzFjNGQ2ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.G70lSLnsxqaS4GgkMsfaT9BQQKTPsmja565xuxUg1P4",
 
   // The DMCA email displayed in the footer, null to hide the DMCA link
-  VITE_DMCA_EMAIL: null,
+  VITE_DMCA_EMAIL: "user@kace.dev",
 
   // Whether to disable hash-based routing, leave this as false if you don't know what this is
   VITE_NORMAL_ROUTER: false,
