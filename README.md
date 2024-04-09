@@ -10,8 +10,6 @@ film.kace.dev is a mirror of [movie-web](httpsgithub.commovie-webmovie-web)
 | Backend        | *to follow*    ||
 | Frontend       | [film.kace.dev](https://film.kace.dev)                 | [Source Code](https://github.com/userkace/film.kace.dev)  |
 
-I provide these if you are not able to host yourself, though I do encourage hosting the frontend.
-
 ## Referrers
 - [Piracy Subreddit Megathread](https://www.reddit.com/r/Piracy/s/iymSloEpXn)
 - [Toon's Instances](https://erynith.github.io/movie-web-instances)
