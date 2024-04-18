@@ -1,5 +1,5 @@
 # film.kace.dev
-film.kace.dev is a mirror of [movie-web](httpsgithub.commovie-webmovie-web)
+film.kace.dev is a mirror of [movie-web](https://github.com/movie-web/movie-web)
 
 ```html
   https://film.kace.dev
