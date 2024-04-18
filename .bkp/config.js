@@ -13,7 +13,7 @@ window.__CONFIG__ = {
   VITE_NORMAL_ROUTER: false,
 
   // The backend URL to communicate with
-  VITE_BACKEND_URL: "https://mw-backend.lonelil.com",
+  VITE_BACKEND_URL: "https://backend.sudo-flix.lol",
 
   // A comma separated list of disallowed IDs in the case of a DMCA claim - in the format "series-<id>" and "movie-<id>"
   VITE_DISALLOWED_IDS: "",
