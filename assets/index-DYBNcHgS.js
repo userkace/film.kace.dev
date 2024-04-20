@@ -12360,3 +12360,4 @@ function __vite__mapDeps(indexes) {
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
 //# sourceMappingURL=index-DYBNcHgS.js.map
+// if digital purchase isn't ownership, then piracy isn't theft.
