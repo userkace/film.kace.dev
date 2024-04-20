@@ -463,9 +463,9 @@ var lr = {
   PACKAGE_VERSION: "4.7.0"
 };
 const vo = "4.7.0",
-  jo = "https://movie-web.github.io/links/discord",
+  jo = "https://discord.gg/mvDhUJGs5H",
   wo = "https://github.com/userkace/film.kace.dev",
-  ko = "https://ko-fi.com/movieweb",
+  ko = "https://ko-fi.com/userkace",
   ls = lr.VITE_GA_ID,
   ot = lr.VITE_BACKEND_URL;
 var re = {
