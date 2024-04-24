@@ -990,7 +990,7 @@ video {
      --colors-mediaCard-barFillColor: 130 136 254;
      --colors-mediaCard-badge: 10 10 10;
      --colors-mediaCard-badgeText: 107 107 107;
-     --colors-largeCard-background: 30 30 30;
+     --colors-largeCard-background: 15 15 15;
      --colors-largeCard-icon: 51 58 190;
      --colors-dropdown-background: 10 10 10;
      --colors-dropdown-altBackground: 10 10 10;
@@ -1001,11 +1001,11 @@ video {
      --colors-dropdown-contentBackground: 15 15 15;
      --colors-authentication-border: 30 30 30;
      --colors-authentication-inputBg: 10 10 10;
-     --colors-authentication-inputBgHover: 40 40 40;
-     --colors-authentication-wordBackground: 40 40 40;
+     --colors-authentication-inputBgHover: 15 15 15;
+     --colors-authentication-wordBackground: 15 15 15;
      --colors-authentication-copyText: 102 102 102;
      --colors-authentication-copyTextHover: 141 141 141;
-     --colors-settings-sidebar-activeLink: 20 20 20;
+     --colors-settings-sidebar-activeLink: 15 15 15;
      --colors-settings-sidebar-badge: 14 14 14;
      --colors-settings-sidebar-type-secondary: 79 79 79;
      --colors-settings-sidebar-type-inactive: 124 124 124;
