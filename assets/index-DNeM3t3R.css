@@ -948,13 +948,13 @@ video {
 .theme-amoled {
      --colors-themePreview-primary: 30 30 30;
      --colors-themePreview-secondary: 20 20 20;
-     --colors-pill-background: 15 15 15;
-     --colors-pill-backgroundHover: 50 50 50;
+     --colors-pill-background: 0 0 0;
+     --colors-pill-backgroundHover: 15 15 15;
      --colors-pill-highlight: 134 134 134;
      --colors-pill-activeBackground: 30 30 30;
      --colors-global-accentA: 134 134 134;
      --colors-global-accentB: 100 100 100;
-     --colors-lightBar-light: 78 78 78;
+     --colors-lightBar-light: 20 20 20;
      --colors-buttons-toggle: 69 76 212;
      --colors-buttons-toggleDisabled: 44 44 44;
      --colors-buttons-secondary: 30 30 30;
@@ -976,12 +976,12 @@ video {
      --colors-type-secondary: 107 107 107;
      --colors-type-link: 130 136 254;
      --colors-type-linkHover: 170 175 255;
-     --colors-search-background: 40 40 40;
-     --colors-search-hoverBackground: 10 10 10;
-     --colors-search-focused: 30 30 30;
+     --colors-search-background: 0 0 0;
+     --colors-search-hoverBackground: 0 0 0;
+     --colors-search-focused: 0 0 0;
      --colors-search-placeholder: 102 102 102;
      --colors-search-icon: 102 102 102;
-     --colors-search-text: 30 30 30;
+     --colors-search-text: 255 255 255;
      --colors-mediaCard-hoverBackground: 10 10 10;
      --colors-mediaCard-hoverAccent: 124 124 124;
      --colors-mediaCard-hoverShadow: 14 14 14;
