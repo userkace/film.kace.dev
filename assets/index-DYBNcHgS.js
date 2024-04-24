@@ -2141,6 +2141,7 @@ const hl = {
       themes: {
         blue: "Blue",
         default: "Default",
+        amoled: "AMOLED",
         gray: "Gray",
         red: "Red",
         teal: "Teal"
