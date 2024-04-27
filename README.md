@@ -9,6 +9,10 @@ if digital purchase isn't ownership, then piracy isn't theft.
 - bookmark shows or movies, keep track of what you want to watch.
 - minimalistic interface that only shows whats required - no algorithm to consume you.
 
+## extension
+due to the removal of the extension from both chromium and firefox the extension must now be installed locally
+extension installation guide can be found [here](https://github.com/userkace/film-ext)
+
 ## technologies
 
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
