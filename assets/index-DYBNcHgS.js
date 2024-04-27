@@ -519,8 +519,10 @@ function F() {
     DONATION_LINK: ko,
     DISCORD_LINK: jo,
     DMCA_EMAIL: ae("DMCA_EMAIL"),
-    ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: ae("ONBOARDING_CHROME_EXTENSION_INSTALL_LINK", "https://chromewebstore.google.com/detail/movie-web-extension/hoffoikpiofojilgpofjhnkkamfnnhmm"),
-    ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK: ae("ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK", "https://addons.mozilla.org/en-GB/firefox/addon/movie-web-extension"),
+    ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: ae("ONBOARDING_CHROME_EXTENSION_INSTALL_LINK", "https://github.com/userkace/film-ext"),
+    // https://chromewebstore.google.com/detail/movie-web-extension/hoffoikpiofojilgpofjhnkkamfnnhmm
+    ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK: ae("ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK", "https://github.com/userkace/film-ext"),
+    // https://addons.mozilla.org/en-GB/firefox/addon/movie-web-extension
     ONBOARDING_PROXY_INSTALL_LINK: ae("ONBOARDING_PROXY_INSTALL_LINK"),
     BACKEND_URL: ae("BACKEND_URL", ot),
     TMDB_READ_API_KEY: ae("TMDB_READ_API_KEY"),
