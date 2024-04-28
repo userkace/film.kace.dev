@@ -1,5 +1,5 @@
 # film.kace.dev
-film.kace.dev is a fork of movie-web with some changes...
+film.kace.dev is an online streaming website for movies and tv shows.
 
 ## philosophy
 if digital purchase isn't ownership, then piracy isn't theft.
