@@ -10,7 +10,7 @@ window.__CONFIG__ = {
   VITE_DMCA_EMAIL: "user@kace.dev",
 
   // Whether to disable hash-based routing, leave this as false if you don't know what this is
-  VITE_NORMAL_ROUTER: true,
+  VITE_NORMAL_ROUTER: false,
 
   // The backend URL to communicate with
   VITE_BACKEND_URL: "https://backend.sudo-flix.lol",
