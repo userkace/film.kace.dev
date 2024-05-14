@@ -1796,22 +1796,22 @@ const hl = {
       noResults: "We couldn't find anything!",
       placeholder: {
         default: "What do you want to watch?",
-        extra: ["What do you want to explore?", "What's on your watchlist?", "What's your favorite movie?", "What's your favorite series?"]
+        extra: ["What do you want to explore?", "What's on your watchlist?", "What's your favorite movie?", "What's your favorite series?", "What are you in the mood for today?", "Cult classics anyone?"]
       },
       sectionTitle: "Search results"
     },
     titles: {
       day: {
         default: "What would you like to watch this afternoon?",
-        extra: ["Feeling adventurous? Jurassic Park might be the perfect choice."]
+        extra: ["Feeling adventurous? Jurassic Park might be the perfect choice.", "Take a trip down memory lane with a classic like Back to the Future."]
       },
       morning: {
         default: "What would you like to watch this morning?",
-        extra: ["I hear Before Sunrise is good"]
+        extra: ["I hear Before Sunrise is good.", "A cup of coffee and Singin' in the Rain might be just the pick-me-up you need."]
       },
       night: {
         default: "What would you like to watch tonight?",
-        extra: ["Tired? I hear The Exorcist is good."]
+        extra: ["Tired? I hear The Exorcist is good.", "Feeling brave? Test your nerves with The Shining."]
       }
     }
   },
