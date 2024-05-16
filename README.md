@@ -11,8 +11,8 @@ if digital purchase isn't ownership, then piracy isn't theft.
 - minimalistic interface that only shows whats required - no algorithm to consume you.
 
 ## extension
-due to the removal of the extension from both chromium and firefox the extension must now be installed locally <br>
-extension installation guide can be found [here](https://github.com/userkace/film-ext)
+due to the removal of the extension from both chromium and firefox the extension must now be installed locally. <br>
+extension installation guide can be found [here](https://github.com/userkace/film-ext).
 
 ## technologies
 
