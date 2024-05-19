@@ -1887,7 +1887,7 @@ const hl = {
       explainer: "To get the best streams possible, you will need to choose which streaming method you want to use.",
       options: {
         default: {
-          text: "I don't want good quality streams,<0 /> <1>use the default setup</1>"
+          text: "Can't install extension or you're on mobile?<0 /> <1>Use the default setup.</1>"
         },
         extension: {
           action: "Install extension",
@@ -2212,7 +2212,7 @@ const hl = {
         secure: "Secure",
         title: "App information",
         unknownVersion: "Unknown",
-        userId: "User ID"
+        userId: "User ID",
       }
     },
     subtitles: {
