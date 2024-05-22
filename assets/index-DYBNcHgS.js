@@ -1887,7 +1887,7 @@ const hl = {
       explainer: "To get the best streams possible, you will need to choose which streaming method you want to use.",
       options: {
         default: {
-          text: "I don't want good quality streams,<0 /> <1>use the default setup</1>"
+          text: "On mobile or can't install extension?,<0 /> <1>Use the default setup!</1>"
         },
         extension: {
           action: "Install extension",
@@ -2143,6 +2143,7 @@ const hl = {
       themes: {
         blue: "Blue",
         default: "Default",
+        blurple: "Blurple",
         amoled: "AMOLED",
         gray: "Gray",
         red: "Red",
