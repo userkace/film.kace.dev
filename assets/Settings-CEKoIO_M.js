@@ -1662,6 +1662,14 @@ const la = [{
           selector: "theme-default",
           key: "settings.appearance.themes.default"
      }, {
+          id: "red",
+          selector: "theme-red",
+          key: "settings.appearance.themes.red"
+     }, {
+          id: "blurple",
+          selector: "theme-blurple",
+          key: "settings.appearance.themes.blurple"
+     }, {
           id: "blue",
           selector: "theme-blue",
           key: "settings.appearance.themes.blue"
@@ -1669,10 +1677,6 @@ const la = [{
           id: "teal",
           selector: "theme-teal",
           key: "settings.appearance.themes.teal"
-     }, {
-          id: "red",
-          selector: "theme-red",
-          key: "settings.appearance.themes.red"
      }, {
           id: "gray",
           selector: "theme-gray",
