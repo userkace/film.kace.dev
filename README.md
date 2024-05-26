@@ -14,6 +14,9 @@ if digital purchase isn't ownership, then piracy isn't theft.
 due to the removal of the extension from both chromium and firefox the extension must now be installed locally. <br>
 extension installation guide can be found [here](https://github.com/userkace/film-ext).
 
+## disclaimer
+film.kace.dev does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. film.kace.dev is not responsible for any media files shown by the video providers.
+
 ## technologies
 
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
