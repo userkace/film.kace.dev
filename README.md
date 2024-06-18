@@ -9,6 +9,7 @@ if digital purchase isn't ownership, then piracy isn't theft.
 - automatic saving of progress - optionally synced to an account.
 - bookmark shows or movies, keep track of what you want to watch.
 - minimalistic interface that only shows whats required - no algorithm to consume you.
+- no ads! - enjoy ad free content watching.
 
 ## extension
 due to the removal of the extension from both chromium and firefox the extension must now be installed locally. <br>
