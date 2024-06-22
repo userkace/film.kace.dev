@@ -3,7 +3,7 @@ film.kace.dev is an online streaming website for movies and tv shows. <br>
 a predecessor to the late movie-web.
 
 ## philosophy
-if digital purchase isn't ownership, then piracy isn't theft.
+"culture shouldn't exist only for those who can afford it." — [@HakitaDev](https://x.com/HakitaDev/status/1797245014268891236?t=O6_sd_h5oyPeG5FATc27PQ&s=19)
 
 ## features
 - automatic saving of progress - optionally synced to an account.
