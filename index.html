@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<!--https://www.youtube.com/watch?v=dQw4w9WgXcQ-->
+
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="/favicon.ico" />
+  <meta itemprop="image" content="/android-chrome-192x192.png">
+  <meta property="og:image" content="/android-chrome-192x192.png">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="The place for your favourite movies & shows" />
+  <meta name="description" content="Watch your favorite shows and movies for free with no ads ever! (っ'ヮ'c)" />
+  <link rel="manifest" href="/manifest.json" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -121,7 +126,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script src="/config.js"></script>
 
@@ -133,22 +138,33 @@
 
   <title>film is loading...</title>
 
-  <script type="module" crossorigin src="/assets/index-DYBNcHgS.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/auth-72H9TcpW.js">
-  <link rel="modulepreload" crossorigin href="/assets/caption-parsing-BABN6jyO.js">
-  <link rel="modulepreload" crossorigin href="/assets/vendor-Dkz3gcSC.js">
-  <link rel="modulepreload" crossorigin href="/assets/react-dom-DpNJ2UNC.js">
-  <link rel="modulepreload" crossorigin href="/assets/locales-BXkJCeK5.js">
-  <link rel="modulepreload" crossorigin href="/assets/language-db-DxKZVAm4.js">
-  <link rel="modulepreload" crossorigin href="/assets/Icons-Ct84pi7p.js">
-  <link rel="modulepreload" crossorigin href="/assets/hls-2_Gpnevg.js">
-  <link rel="stylesheet" crossorigin href="/assets/Icons-7LetCtYR.css">
-  <link rel="stylesheet" crossorigin href="/assets/index-DNeM3t3R.css">
-<link rel="manifest" href="/manifest.webmanifest"></head>
+  {{#if opensearchEnabled }}
+  <!-- OpenSearch -->
+  <link rel="search" type="application/opensearchdescription+xml" title="film.kace.dev" href="/opensearch.xml">
+
+  <!-- Google Sitelinks -->
+  <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "{{ routeDomain }}",
+          "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ routeDomain }}/browse/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+          }
+        }
+      </script>
+  {{/if}}
+</head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
 </body>
 
 </html>
