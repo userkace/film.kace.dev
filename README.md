@@ -1,3 +1,6 @@
+## development moved
+https://github.com/userkace/film is now the home of your movies and shows!
+
 # film.kace.dev
 film.kace.dev is an online streaming website for movies and tv shows. <br>
 a predecessor to the late movie-web.
