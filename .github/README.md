@@ -1,13 +1,22 @@
 # film.kace.dev
-film.kace.dev is a fork of movie-web with some changes...
+film.kace.dev is an online streaming website for movies and tv shows. <br>
+a predecessor to the late movie-web.
 
 ## philosophy
-if digital purchase isn't ownership, then piracy isn't theft.
+"culture shouldn't exist only for those who can afford it."
 
 ## features
 - automatic saving of progress - optionally synced to an account.
 - bookmark shows or movies, keep track of what you want to watch.
 - minimalistic interface that only shows whats required - no algorithm to consume you.
+- no ads! - enjoy ad free content watching.
+
+## extension
+due to the removal of the extension from both chromium and firefox the extension must now be installed locally. <br>
+extension installation guide can be found [here](https://github.com/userkace/film-ext).
+
+## disclaimer
+film.kace.dev does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. film.kace.dev is not responsible for any media files shown by the video providers.
 
 ## technologies
 
