@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import { genMnemonic } from "@/backend/accounts/crypto";
 import { Button } from "@/components/buttons/Button";
@@ -25,12 +25,7 @@ export function PassphraseGeneratePart(props: PassphraseGeneratePartProps) {
         title={t("auth.generate.title")}
         icon={<Icon icon={Icons.USER} />}
       >
-        <Trans
-          i18nKey="auth.generate.description"
-          components={{
-            bold: <span className="font-bold" style={{ color: "#cfcfcf" }} />,
-          }}
-        />
+        {t("auth.generate.description")}
       </LargeCardText>
       <PassphraseDisplay mnemonic={mnemonic} />
 

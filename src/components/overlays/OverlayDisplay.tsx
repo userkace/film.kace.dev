@@ -9,7 +9,7 @@ import {
   useInternalOverlayRouter,
   useRouterAnchorUpdate,
 } from "@/hooks/useOverlayRouter";
-import { TurnstileProvider, getTurnstile } from "@/stores/turnstile";
+import { TurnstileProvider } from "@/stores/turnstile";
 
 export interface OverlayProps {
   id: string;
@@ -21,26 +21,20 @@ function TurnstileInteractive() {
   const { t } = useTranslation();
   const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    getTurnstile();
-  }, []);
-
   // this may not rerender with different dom structure, must be exactly the same always
   return (
     <div
       className={classNames(
-        "absolute w-full max-w-[43em] max-h-full p-5 md:p-10 rounded-lg bg-dropdown-altBackground select-none z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform overflow-auto",
+        "absolute w-10/12 max-w-[800px] bg-background-main p-20 rounded-lg select-none z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform",
         show ? "" : "hidden",
       )}
     >
-      <div className="w-full h-full grid lg:grid-cols-[1fr,auto] gap-6 md:gap-7 items-center">
+      <div className="w-full grid lg:grid-cols-[1fr,auto] gap-12 items-center">
         <div className="text-left">
-          <h2 className="text-type-emphasis font-bold text-lg md:text-xl mb-4 md:mb-6">
+          <h2 className="text-type-emphasis font-bold text-xl mb-6">
             {t("player.turnstile.title")}
           </h2>
-          <p className="text-type-emphasis">
-            {t("player.turnstile.description")}
-          </p>
+          <p>{t("player.turnstile.description")}</p>
         </div>
         <TurnstileProvider
           isInPopout

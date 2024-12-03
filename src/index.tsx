@@ -29,13 +29,18 @@ import { changeAppLanguage, useLanguageStore } from "@/stores/language";
 import { ProgressSyncer } from "@/stores/progress/ProgressSyncer";
 import { SettingsSyncer } from "@/stores/subtitles/SettingsSyncer";
 import { ThemeProvider } from "@/stores/theme";
+import { TurnstileProvider } from "@/stores/turnstile";
 
+import { AdsScript } from "./AdsScript";
 import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
 import { initializeChromecast } from "./setup/chromecast";
+// eslint-disable-next-line import/order
 import { initializeOldStores } from "./stores/__old/migrations";
+
+// Import the IframeMessage component
 
 // initialize
 initializeChromecast();
@@ -169,12 +174,14 @@ function ExtensionStatus() {
   }
   return null;
 }
+
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
 root.render(
   <StrictMode>
     <ErrorBoundary>
+      <TurnstileProvider />
       <HelmetProvider>
         <Suspense fallback={<LoadingScreen type="lazy" />}>
           <ExtensionStatus />
@@ -185,6 +192,7 @@ root.render(
             <TheRouter>
               <MigrationRunner />
             </TheRouter>
+            <AdsScript />
           </ThemeProvider>
         </Suspense>
       </HelmetProvider>

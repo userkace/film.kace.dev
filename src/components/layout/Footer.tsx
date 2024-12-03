@@ -47,7 +47,6 @@ function Dmca() {
   const { t } = useTranslation();
 
   if (!shouldHaveDmcaPage()) return null;
-  if (window.location.hash === "#/dmca") return null;
 
   return (
     <FooterLink to="/dmca" icon={Icons.DRAGON}>
@@ -68,21 +67,21 @@ export function Footer() {
           </div>
           <p className="mt-4 lg:max-w-[400px]">{t("footer.tagline")}</p>
         </div>
-        <div className="md:text-right">
+        <div className="md:text-right text-balance">
           <h3 className="font-semibold text-type-emphasis">
             {t("footer.legal.disclaimer")}
           </h3>
           <p className="mt-3">{t("footer.legal.disclaimerText")}</p>
         </div>
         <div className="flex flex-wrap gap-[0.5rem] -ml-3">
-          <FooterLink icon={Icons.GITHUB} href={conf().GITHUB_LINK}>
-            {t("footer.links.github")}
-          </FooterLink>
           <FooterLink icon={Icons.DISCORD} href={conf().DISCORD_LINK}>
             {t("footer.links.discord")}
           </FooterLink>
-          <FooterLink icon={Icons.TWITTER} href={conf().TWITTER_LINK}>
-            {t("footer.links.twitter")}
+          <FooterLink icon={Icons.FACEBOOK} href={conf().FACEBOOK_LINK}>
+            {t("footer.links.facebook")}
+          </FooterLink>
+          <FooterLink icon={Icons.INSTAGRAM} href={conf().INSTAGRAM_LINK}>
+            {t("footer.links.instagram")}
           </FooterLink>
           <div className="inline md:hidden">
             <Dmca />

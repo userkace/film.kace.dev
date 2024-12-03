@@ -18,7 +18,7 @@ export const SearchBarInput = forwardRef<HTMLInputElement, SearchBarProps>(
     const [focused, setFocused] = useState(false);
 
     function setSearch(value: string) {
-      props.onChange(value, true);
+      props.onChange(value, false);
     }
 
     return (

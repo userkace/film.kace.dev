@@ -61,7 +61,7 @@ function MediaCardContent({
 
   const [searchQuery] = useSearchQuery();
 
-  const { isMobile } = useIsMobile();
+  const isMobile = useIsMobile();
 
   if (media.year) {
     dotListContent.push(media.year.toFixed());

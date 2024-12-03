@@ -21,7 +21,6 @@ import id from "@/assets/locales/id.json";
 import is from "@/assets/locales/is-IS.json";
 import it from "@/assets/locales/it.json";
 import ja from "@/assets/locales/ja.json";
-import kitty from "@/assets/locales/kitty.json";
 import ko from "@/assets/locales/ko.json";
 import lv from "@/assets/locales/lv.json";
 import minion from "@/assets/locales/minion.json";
@@ -42,7 +41,6 @@ import th from "@/assets/locales/th.json";
 import tok from "@/assets/locales/tok.json";
 import tr from "@/assets/locales/tr.json";
 import uk from "@/assets/locales/uk.json";
-import uwu from "@/assets/locales/uwu.json";
 import vi from "@/assets/locales/vi.json";
 import zhhant from "@/assets/locales/zh-Hant.json";
 import zh from "@/assets/locales/zh.json";
@@ -64,8 +62,6 @@ export const locales = {
   he,
   sv,
   pirate,
-  kitty,
-  uwu,
   minion,
   lv,
   th,

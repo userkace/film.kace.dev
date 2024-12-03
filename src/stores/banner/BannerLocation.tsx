@@ -6,26 +6,17 @@ import { useBannerStore, useRegisterBanner } from "@/stores/banner";
 
 export function Banner(props: {
   children: React.ReactNode;
-  type: "error" | "info"; // Add "info" type
+  type: "error";
   id: string;
 }) {
   const [ref] = useRegisterBanner<HTMLDivElement>(props.id);
   const hideBanner = useBannerStore((s) => s.hideBanner);
   const styles = {
     error: "bg-[#C93957] text-white",
-    info: "bg-[#126FD3] text-white", // Add "info" style
   };
   const icons = {
     error: Icons.CIRCLE_EXCLAMATION,
-    info: Icons.CIRCLE_EXCLAMATION,
   };
-
-  useEffect(() => {
-    const hideBannerFlag = sessionStorage.getItem("hideBanner");
-    if (hideBannerFlag) {
-      hideBanner(props.id, true);
-    }
-  }, [hideBanner, props.id]);
 
   return (
     <div ref={ref}>
@@ -41,10 +32,7 @@ export function Banner(props: {
         </div>
         <span
           className="absolute right-4 hover:cursor-pointer"
-          onClick={() => {
-            hideBanner(props.id, true);
-            sessionStorage.setItem("hideBanner", "true");
-          }}
+          onClick={() => hideBanner(props.id, true)}
         >
           <Icon icon={Icons.X} />
         </span>
@@ -70,9 +58,6 @@ export function BannerLocation(props: { location?: string }) {
   }, [setLocation, loc]);
 
   if (currentLocation !== loc) return null;
-
-  const hideBannerFlag = sessionStorage.getItem("hideBanner");
-  if (hideBannerFlag) return null;
 
   return (
     <div>

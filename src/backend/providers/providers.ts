@@ -13,8 +13,7 @@ import {
 export function getProviders() {
   if (isExtensionActiveCached()) {
     return makeProviders({
-      fetcher: makeStandardFetcher(fetch),
-      proxiedFetcher: makeExtensionFetcher(),
+      fetcher: makeExtensionFetcher(),
       target: targets.BROWSER_EXTENSION,
       consistentIpForRequests: true,
     });

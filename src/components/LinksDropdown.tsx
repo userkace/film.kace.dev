@@ -24,12 +24,8 @@ function GoToLink(props: {
   const navigate = useNavigate();
 
   const goTo = (href: string) => {
-    if (href.startsWith("http")) {
-      window.open(href, "_blank");
-    } else {
-      window.scrollTo(0, 0);
-      navigate(href);
-    }
+    if (href.startsWith("http")) window.open(href, "_blank");
+    else navigate(href);
   };
 
   return (
@@ -135,19 +131,22 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
               {decryptData(deviceName, bufferSeed)}
             </DropdownLink>
           ) : (
-            <DropdownLink href="/login" icon={Icons.RISING_STAR} highlight>
+            <DropdownLink href="/login" icon={Icons.CLOUD} highlight>
               {t("navigation.menu.register")}
             </DropdownLink>
           )}
           <Divider />
+          <DropdownLink href="/discover" icon={Icons.COMPASS}>
+            {t("navigation.menu.discover")}
+          </DropdownLink>
           <DropdownLink href="/settings" icon={Icons.SETTINGS}>
             {t("navigation.menu.settings")}
           </DropdownLink>
           <DropdownLink href="/about" icon={Icons.CIRCLE_QUESTION}>
             {t("navigation.menu.about")}
           </DropdownLink>
-          <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
-            {t("navigation.menu.discover")}
+          <DropdownLink href={conf().DONATION_LINK} icon={Icons.DONATION}>
+            {t("navigation.menu.donation")}
           </DropdownLink>
           {deviceName ? (
             <DropdownLink
@@ -161,15 +160,18 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           <Divider />
           <div className="my-4 flex justify-center items-center gap-4">
             <CircleDropdownLink
+              href={conf().FACEBOOK_LINK}
+              icon={Icons.FACEBOOK}
+            />
+            <CircleDropdownLink
+              href={conf().INSTAGRAM_LINK}
+              icon={Icons.INSTAGRAM}
+            />
+            <CircleDropdownLink
               href={conf().DISCORD_LINK}
               icon={Icons.DISCORD}
             />
             <CircleDropdownLink href={conf().GITHUB_LINK} icon={Icons.GITHUB} />
-            <CircleDropdownLink
-              href={conf().TWITTER_LINK}
-              icon={Icons.TWITTER}
-            />
-            <CircleDropdownLink href="/support" icon={Icons.MAIL} />
           </div>
         </div>
       </Transition>

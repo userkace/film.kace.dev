@@ -11,7 +11,7 @@ export interface ThemeStore {
 
 const currentDate = new Date();
 const is420 = currentDate.getMonth() + 1 === 4 && currentDate.getDate() === 20;
-// Make default theme teal if its 4/20 (bc the marijauna plant is green :3)
+// Make default theme teal if its 4/20 (bc the marijauna plant is green
 export const useThemeStore = create(
   persist(
     immer<ThemeStore>((set) => ({

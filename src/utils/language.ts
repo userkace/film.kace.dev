@@ -1,8 +1,7 @@
 import countryLanguages, { LanguageObj } from "@ladjs/country-language";
 import { getTag } from "@sozialhelden/ietf-language-tags";
 
-const languageOrder = ["en", "hi", "fr", "de", "nl", "pt"];
-
+const languageOrder = ["en", "es", "fr", "de", "nl", "hi", "pt"];
 // mapping of language code to country code.
 // multiple mappings can exist, since languages are spoken in multiple countries.
 // This mapping purely exists to prioritize a country over another in languages where the base language code does
@@ -20,7 +19,6 @@ const defaultLanguageCodes: string[] = [
   "bn-BD",
   "cs-CZ",
   "ca-AD",
-  "da-DK",
   "de-DE",
   "el-GR",
   "en-US",
@@ -63,16 +61,6 @@ const extraLanguages: Record<string, LocaleInfo> = {
     code: "pirate",
     name: "Pirate",
     nativeName: "Pirate Tongue",
-  },
-  kitty: {
-    code: "cat",
-    name: "Cat",
-    nativeName: "Kitty Speak",
-  },
-  uwu: {
-    code: "uwu",
-    name: "Cutsie OwO",
-    nativeName: "UwU",
   },
   minion: {
     code: "minion",

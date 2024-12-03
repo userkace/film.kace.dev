@@ -44,6 +44,22 @@ export function DownloadView({ id }: { id: string }) {
   const router = useOverlayRouter(id);
   const { t } = useTranslation();
   const downloadUrl = useDownloadLink();
+
+  // Custom function to process the download URL
+  const processDownloadUrl = useCallback(() => {
+    if (!downloadUrl) return "";
+
+    // Check if the URL contains the m3u8-proxy and the ?url= parameter
+    const match = downloadUrl.match(/m3u8-proxy\?url=(.*)$/);
+    if (match && match[1]) {
+      // Decode the URL component
+      return decodeURIComponent(match[1]);
+    }
+
+    return downloadUrl; // Return original if no specific pattern is found
+  }, [downloadUrl]);
+
+  const hlsDownload = `https://hlsdownload.vidbinge.com/?url=${encodeURIComponent(processDownloadUrl())}`;
   const [, copyToClipboard] = useCopyToClipboard();
 
   const sourceType = usePlayerStore((s) => s.source?.type);
@@ -70,10 +86,12 @@ export function DownloadView({ id }: { id: string }) {
               <Menu.Paragraph marginClass="mb-6">
                 <StyleTrans k="player.menus.downloads.hlsDisclaimer" />
               </Menu.Paragraph>
-
+              <Button className="w-full" theme="purple" href={hlsDownload}>
+                {t("player.menus.downloads.downloadHlsAsVideo")}
+              </Button>
               <Button
-                className="w-full"
-                theme="purple"
+                className="w-full mt-2"
+                theme="secondary"
                 href={downloadUrl}
                 onClick={(event) => {
                   // Allow context menu & left click to copy
@@ -83,14 +101,6 @@ export function DownloadView({ id }: { id: string }) {
                 }}
               >
                 {t("player.menus.downloads.copyHlsPlaylist")}
-              </Button>
-              <Button
-                className="w-full mt-2"
-                onClick={openSubtitleDownload}
-                disabled={!selectedCaption}
-                theme="secondary"
-              >
-                {t("player.menus.downloads.downloadSubtitle")}
               </Button>
             </>
           ) : (

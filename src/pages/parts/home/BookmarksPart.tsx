@@ -1,5 +1,5 @@
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { EditButton } from "@/components/buttons/EditButton";
@@ -11,11 +11,7 @@ import { useBookmarkStore } from "@/stores/bookmarks";
 import { useProgressStore } from "@/stores/progress";
 import { MediaItem } from "@/utils/mediaTypes";
 
-export function BookmarksPart({
-  onItemsChange,
-}: {
-  onItemsChange: (hasItems: boolean) => void;
-}) {
+export function BookmarksPart() {
   const { t } = useTranslation();
   const progressItems = useProgressStore((s) => s.items);
   const bookmarks = useBookmarkStore((s) => s.bookmarks);
@@ -44,10 +40,6 @@ export function BookmarksPart({
     });
     return output;
   }, [bookmarks, progressItems]);
-
-  useEffect(() => {
-    onItemsChange(items.length > 0);
-  }, [items, onItemsChange]);
 
   if (items.length === 0) return null;
 

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import { useBannerSize, useBannerStore } from "@/stores/banner";
+import { BannerLocation } from "@/stores/banner/BannerLocation";
 
 export function Layout(props: { children: ReactNode }) {
   const bannerSize = useBannerSize();
@@ -8,6 +9,9 @@ export function Layout(props: { children: ReactNode }) {
 
   return (
     <div>
+      <div className="fixed inset-x-0 z-[1000]">
+        <BannerLocation />
+      </div>
       <div
         style={{
           paddingTop: location === null ? `${bannerSize}px` : "0px",

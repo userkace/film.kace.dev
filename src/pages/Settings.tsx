@@ -37,7 +37,6 @@ import { useSubtitleStore } from "@/stores/subtitles";
 import { usePreviewThemeStore, useThemeStore } from "@/stores/theme";
 
 import { SubPageLayout } from "./layouts/SubPageLayout";
-import { AdminPanelPart } from "./parts/settings/AdminPanel";
 import { PreferencesPart } from "./parts/settings/PreferencesPart";
 
 function SettingsLayout(props: { children: React.ReactNode }) {
@@ -124,6 +123,9 @@ export function SettingsPage() {
   const enableThumbnails = usePreferencesStore((s) => s.enableThumbnails);
   const setEnableThumbnails = usePreferencesStore((s) => s.setEnableThumbnails);
 
+  const enableAds = usePreferencesStore((s) => s.enableAds);
+  const setEnableAds = usePreferencesStore((s) => s.setEnableAds);
+
   const enableAutoplay = usePreferencesStore((s) => s.enableAutoplay);
   const setEnableAutoplay = usePreferencesStore((s) => s.setEnableAutoplay);
 
@@ -145,6 +147,7 @@ export function SettingsPage() {
 
   const state = useSettingsState(
     activeTheme,
+    enableAds,
     appLanguage,
     subStyling,
     decryptedName,
@@ -222,6 +225,7 @@ export function SettingsPage() {
     }
 
     setEnableThumbnails(state.enableThumbnails.state);
+    setEnableAds(state.enableAds.state);
     setEnableAutoplay(state.enableAutoplay.state);
     setSourceOrder(state.sourceOrder.state);
     setAppLanguage(state.appLanguage.state);
@@ -250,6 +254,7 @@ export function SettingsPage() {
     setEnableThumbnails,
     state,
     setEnableAutoplay,
+    setEnableAds,
     setSourceOrder,
     setAppLanguage,
     setTheme,
@@ -290,11 +295,10 @@ export function SettingsPage() {
             <RegisterCalloutPart />
           )}
         </div>
-        <div className="mt-10">
-          <AdminPanelPart />
-        </div>
         <div id="settings-preferences" className="mt-48">
           <PreferencesPart
+            enableAds={state.enableAds.state}
+            setEnableAds={state.enableAds.set}
             language={state.appLanguage.state}
             setLanguage={state.appLanguage.set}
             enableThumbnails={state.enableThumbnails.state}
